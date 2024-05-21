@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Onboarding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tab {
+            display: none;
+        }
+        .tab-buttons {
+            margin-bottom: 20px;
+        }
+        .tab-buttons button {
+            padding: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .tab-buttons button.active {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="tab-buttons">
+        <button onclick="openTab('tab1')" class="active">Personal Details</button>
+        <button onclick="openTab('tab2')">Educational / Professional Qualification</button>
+        <button onclick="openTab('tab3')">UAN and EPF Details</button>
+        <button onclick="openTab('tab4')">Nomination under Mediclaim Policy</button>
+        <button onclick="openTab('tab5')">Acknowledgement Forms</button>
+        <button onclick="openTab('tab6')">Additional Documents to Upload</button>
+        <button onclick="openTab('tab7')">Feedback Form</button>
+        <button onclick="openTab('tab8')">Probation Form</button>
+    </div>
+
+    <div id="tab1" class="tab" style="display: block;">
+        <h2>Personal Details</h2>
+        
+        <h3>Communication Details:</h3>
+        <table>
+            <tr>
+                <th>Present Address</th>
+                <th>Permanent Address</th>
+            </tr>
+            <tr>
+                <td>
+                    City:<br>
+                    State:<br>
+                    Pin Code:<br>
+                    Mobile No.:<br>
+                    Personal Email ID:
+                </td>
+                <td>
+                    City:<br>
+                    State:<br>
+                    Pin Code:<br>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Family Background:</h3>
+        <p>(Father’s detail is mandatory. Please fill the proper date of birth as per the format)</p>
+        <table>
+            <tr>
+                <th>Name of the family member</th>
+                <th>Relationship</th>
+                <th>Occupation</th>
+                <th>Date of Birth (dd/mm/yyyy)</th>
+                <th>Residential Location</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <h3>Languages Known:</h3>
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Speak</th>
+                <th>Read</th>
+                <th>Write</th>
+                <th>Mother Tongue</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <h3>Details of person to be contacted at the time of emergency:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Relationship</th>
+                <th>Address</th>
+                <th>Mobile No</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tab2" class="tab">
+        <h2>Educational / Professional Qualification and Employment History</h2>
+        <h3>Educational / Professional Qualification:</h3>
+        <table>
+            <tr>
+                <th>Examination / Course</th>
+                <th>College / University</th>
+                <th>Specialization / Branch</th>
+                <th>Year of Passing</th>
+                <th>Duration of course (In Yrs.)</th>
+                <th>Full Time / Part Time</th>
+                <th>Marks Obtained (%)</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <h3>Employment History:</h3>
+        <table>
+            <tr>
+                <th>Details</th>
+                <th>Employer 1</th>
+                <th>Employer 2</th>
+                <th>Employer 3</th>
+                <th>Employer 4</th>
+                <th>Employer 5</th>
+            </tr>
+            <tr>
+                <td>Start Date (DD-MM-YY)</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>End Date (DD-MM-YY)</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>Employer Name</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>Location (City, State)</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>Designation</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>Industry</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>Major Responsibilities</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <h3>Professional References:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Company in which, worked together</th>
+                <th>Relationship</th>
+                <th>Mobile No.</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tab3" class="tab">
+        <h2>UAN and EPF Details</h2>
+        <h3>UAN details:</h3>
+        <table>
+            <tr>
+                <th>UAN</th>
+                <th>Previous Member ID</th>
+                <th>Date of exit for previous member ID</th>
+                <th>International Worker (Yes / No)</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <h3>EPF details:</h3>
+        <p>(If you want to transfer the amount of Provident Fund / Pension Fund)</p>
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <th>Name of the establishment last employed in</th>
+                <th>Establishment Address</th>
+                <th>EPF A/c No.</th>
+                <th>EPS A/c No.</th>
+                <th>Remarks (If Any)</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tab4" class="tab">
+        <h2>Nomination under Mediclaim Policy</h2>
+        <h3>Nomination Details:</h3>
+        <table>
+            <tr>
+                <th>S No</th>
+                <th>Name of the insured person</th>
+                <th>Date of Birth (dd/mm/yyyy)</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Occupation</th>
+                <th>Relationship with the Insured</th>
+            </tr>
+            <tr>
+                <td>1</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td>2</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <p><strong>Note:</strong> Who can be covered?</p>
+        <ol>
+            <li>Self (Primary Insured) - Employee.</li>
+            <li>Legal Spouse- Legally wedded wife or husband.</li>
+            <li>Dependent Children- (i.e. legitimate or legally adopted children) up to the age of 25 years. If the child above 18 years is employed or if the girl child is married, he or she shall cease to be covered under the policy and no claim shall be admissible. However, male child can be covered up to the age of 26 years if he is a bonafide regular student and fully dependent on primary insured. Female child can be covered until she is unmarried.</li>
+            <li>Dependent Parents: Dependent Parents up to the age of 85 years can be covered on a payable basis.</li>
+        </ol>
+
+        <p><strong>Signature:</strong> -----------------------</p>
+        <p><strong>Name</strong></p>
+        <p><strong>Designation</strong></p>
+        <p><strong>Location</strong></p>
+        <p><strong>Date</strong></p>
+
+        <h3>Attachments:</h3>
+        <p>Download the following attachments:</p>
+        <ul>
+            <li><a href="#">Form-F</a></li>
+            <li><a href="#">Form-2</a></li>
+            <li><a href="#">Form-11</a></li>
+        </ul>
+    </div>
+
+    <div id="tab5" class="tab">
+        <h2>Read and Sign</h2>
+        <p>Please read the following and add your digital signature:</p>
+        <p><strong>Note:</strong> By adding your digital signature, you acknowledge that you have read and understood the following documents:</p>
+        <ul>
+            <li>Code of Conduct</li>
+            <li>Undertaking</li>
+        </ul>
+        <p><strong>Digital Signature:</strong> [Your digital signature here]</p>
+        <h3>Download Documents:</h3>
+        <ul>
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Undertaking</a></li>
+        </ul>
+    </div>
+
+    <div id="tab6" class="tab">
+        <h2>Additional Documents to Upload</h2>
+        <p>Please attach the following documents:</p>
+        <ul>
+            <li>Offer letter</li>
+            <li>Passport size photograph</li>
+            <li>Copy of RC if applicable</li>
+            <li>Address proof</li>
+            <li>Recruitment firm/consultant Declaration</li>
+        </ul>
+        <form>
+            <label for="offerLetter">Offer Letter:</label>
+            <input type="file" id="offerLetter" name="offerLetter"><br>
+            <label for="passportPhoto">Passport Size Photograph:</label>
+            <input type="file" id="passportPhoto" name="passportPhoto"><br>
+            <label for="copyOfRC">Copy of RC if applicable:</label>
+            <input type="file" id="copyOfRC" name="copyOfRC"><br>
+            <label for="addressProof">Address Proof:</label>
+            <input type="file" id="addressProof" name="addressProof"><br>
+            <label for="recruitmentDeclaration">Recruitment Firm/Consultant Declaration:</label>
+            <input type="file" id="recruitmentDeclaration" name="recruitmentDeclaration"><br>
+        </form>
+    </div>
+
+    <div id="tab7" class="tab">
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="recruitmentExperience">Recruitment Experience:</label><br>
+            <textarea id="recruitmentExperience" name="recruitmentExperience" rows="4" cols="50"></textarea><br>
+            <label for="onboardingExperience">Onboarding Experience:</label><br>
+            <textarea id="onboardingExperience" name="onboardingExperience" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <div id="tab8" class="tab">
+        <h2>Probation Form</h2>
+        <p>Please fill out the probation form below:</p>
+        <form>
+            <label for="probationStartDate">Probation Start Date:</label>
+            <input type="date" id="probationStartDate" name="probationStartDate"><br>
+            <label for="probationEndDate">Probation End Date:</label>
+            <input type="date" id="probationEndDate" name="probationEndDate"><br>
+            <label for="probationRemarks">Remarks:</label><br>
+            <textarea id="probationRemarks" name="probationRemarks" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit Probation Form</button>
+        </form>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            // Hide all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+
+            // Remove active class from all buttons
+            var buttons = document.querySelectorAll('.tab-buttons button');
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+
+            // Show the selected tab and add active class to the corresponding button
+            document.getElementById(tabId).style.display = 'block';
+            document.querySelector('.tab-buttons button[onclick="openTab(\'' + tabId + '\')"]').classList.add('active');
+        }
+
+        // Automatically open the tab based on the URL hash
+        window.onload = function() {
+            var hash = window.location.hash.substring(1);
+            if (hash) {
+                openTab(hash);
+            } else {
+                openTab('tab1');
+            }
+        };
+    </script>
+
+</body>
+</html>
+
