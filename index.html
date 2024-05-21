@@ -337,7 +337,7 @@
         </form>
     </div>
 
-    <script>
+      <script>
         function openTab(tabId) {
             // Hide all tabs
             var tabs = document.getElementsByClassName('tab');
@@ -354,6 +354,9 @@
             // Show the selected tab and add active class to the corresponding button
             document.getElementById(tabId).style.display = 'block';
             document.querySelector('.tab-buttons button[onclick="openTab(\'' + tabId + '\')"]').classList.add('active');
+            
+            // Update the URL hash to reflect the selected tab
+            history.replaceState(null, null, '#' + tabId);
         }
 
         // Automatically open the tab based on the URL hash
